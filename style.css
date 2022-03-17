@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-soft-cyan: hsl(174, 77%, 80%);
+  --color-strong-cyan: hsl(174, 86%, 45%);
+  --color-light-grayish-red: hsl(14, 92%, 95%);
+  --color-light-red: hsl(15, 100%, 70%);
+  --color-pale-blue: hsl(226, 100%, 87%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-very-pale-blue: hsl(230, 100%, 99%);
+  --color-light-grayish-blue-1: hsl(224, 65%, 95%);
+  --color-light-grayish-blue-2: hsl(223, 50%, 87%);
+  --color-grayish-blue: hsl(225, 20%, 60%);
+  --color-dark-desaturated-blue: hsl(227, 35%, 25%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  min-height: 100vh;
+  max-width: 100vw;
+  font-size: 1.5rem;
+  background: url("./images/bg-pattern.svg");
+  background-color: var(--color-light-grayish-blue-1);
+  background-repeat: no-repeat;
+  background-size: 350%;
+  padding: 18rem 0;
+}
+
+.header {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.primary-heading {
+  text-align: center;
+  color: var(--color-dark-desaturated-blue);
+  font-size: 4rem;
+  position: relative;   
+  margin-bottom: 2rem;
+}
+
+.pattern-img {
+    position: absolute;
+    top: 165%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 300px;
+}
+
+.primary-para {
+    text-align: center;
+    color: var(--color-grayish-blue);
+    font-size: 2.7rem;
+    padding: 0 12rem;
+    line-height: 1.8;
+}
+
+.component {
+    max-width: 88%;
+    background: var(--color-white);
+    margin-top: 15rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8rem 2rem;
+    border-radius: 15px 15px 0 0;
+}
+
+.component-header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 18rem;
+    position: relative;
+    margin-bottom: 8rem;
+}
+
+.component-heading {
+    color: var(--color-grayish-blue);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 2.5rem;
+}
+
+.price {
+    font-size: 6.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-weight: bold;
+    color: var(--color-dark-desaturated-blue);
+}
+
+.price span {
+    font-size: 2.5rem;
+    color: var(--color-grayish-blue);
+    font-weight: normal;
+}
+
+.slider {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%);
+    width: 90%;
+    height: 12px;
+    background: linear-gradient(to right, var(--color-soft-cyan), var(--color-light-grayish-blue-1));
+    border-radius: 10px;
+}
+
+.slider-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: var(--color-strong-cyan);
+    width: 70px;
+    height: 70px;
+    padding: 2.3rem 1.5rem;
+}
+
+.billing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.btn {
+    width: 80px;
+    height: 36px;
+    background: var(--color-light-grayish-blue-2);
+    border-radius: 25px;
+    position: relative;
+}
+
+.btn-circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--color-white);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
+}
+
+span {
+    font-size: 2.2rem;
+    color: var(--color-grayish-blue);
+}
+
+.discount {
+    color: var(--color-light-red);
+    background: var(--color-light-grayish-red);
+    border-radius: 15px;
+    padding: .5rem 2rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.order-component {
+    background: var(--color-white);
+    max-width: 88%;
+    margin: .3rem auto;
+    padding: 6rem;
+    border-radius: 0 0 15px 15px;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 6rem;
+}
+
+.check {
+    margin-right: 2rem;
+    width: 15px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--color-dark-desaturated-blue);
+    width: 320px;
+    border: transparent;
+    padding: 2rem;
+    font-family: inherit;
+    color: var(--color-light-grayish-blue-1);
+    font-size: 2.3rem;
+    font-weight: bold;
+    border-radius: 40px;
+}

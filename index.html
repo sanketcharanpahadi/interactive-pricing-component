@@ -1,39 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive pricing component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Interactive pricing component</title>
+    <link rel="stylesheet" href="style.css" />
 
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="primary-heading">
+        Simple, traffic-based pricing
+        <img
+          src="images/pattern-circles.svg"
+          alt="pattern-circles"
+          class="pattern-img"
+        />
+      </h1>
+      <p class="primary-para">
+        Sign-up for our 30-day trial. No credit card required.
+      </p>
+    </header>
 
-  Pageviews
-  $ /month
+    <main>
+      <div class="component">
+        <div class="component-header">
+          <h3 class="component-heading">100K Pageviews</h3>
+          <p class="price">$16.00 <span>/ month</span></p>
+          <div class="slider">
+            <img src="images/icon-slider.svg" alt="" class="slider-icon" />
+          </div>
+        </div>
 
-  Monthly Billing
-  Yearly Billing 25% discount
+        <div class="billing">
+          <span class="monthly">Monthly Billing</span>
+          <div class="btn">
+            <div class="btn-circle"></div>
+          </div>
+          <span class="yearly">Yearly Billing</span>
+          <span class="discount">-25%</span>
+        </div>
+      </div>
 
-  Unlimited websites
-  100% data ownership
-  Email reports
+      <div class="order-component">
+        <div class="features">
+          <div class="feature">
+            <img src="images/icon-check.svg" class="check" alt="" />
+            <span>Unlimited websites</span>
+          </div>
+          <div class="feature">
+            <img src="images/icon-check.svg" class="check" alt="" />
+            <span>100% data ownership</span>
+          </div>
+          <div class="feature">
+            <img src="images/icon-check.svg" class="check" alt="" />
+            <span>Email reports</span>
+          </div>
+        </div>
 
-  Start my trial
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <button>Start my trial</button>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>
